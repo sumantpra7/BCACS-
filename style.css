@@ -1,0 +1,46 @@
+* {
+  background-image: url("gi4.gif");
+  background-size: auto;
+}
+
+.dropdown-menu {
+  color: #ef662b
+}
+
+.nav-item {
+  font-size: 18px;
+  text-transform: uppercase;
+  height: 82px;
+  line-height: 64px;
+}
+
+.flare {
+  background: #ef662b;
+}
+
+.flare a.nav-link {
+  color: #df6e6e !important;
+}
+
+.topbarElements > div:nth-of-type(1) {
+  font-size: 48px;
+  margin: 0px 0px;
+  color: #ef662b;
+}
+
+@media screen and (min-width: 1040px) {
+  .flare {
+    margin-right: -15px;
+  }
+}
+
+@media screen and (max-width: 1029px) {
+  .navbar-nav {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .nav-item {
+    background: rgb(222, 121, 121);
+    margin: 2px;
+  }
+}
