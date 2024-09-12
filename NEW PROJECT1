@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.2em;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        section {
+            margin-bottom: 15px;
+        }
+        p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>John Doe</h1>
+        <p>Software Developer</p>
+        <p>john.doe@example.com | (123) 456-7890</p>
+    </header>
+
+    <section>
+        <h2>Summary</h2>
+        <p>5+ years experience in building web apps using HTML, CSS, JS, and frameworks.</p>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+        <p><strong>Senior Developer</strong>, Tech Solutions Inc. (2020 - Present)</p>
+        <p><strong>Developer</strong>, WebWorks Ltd. (2016 - 2019)</p>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <p>B.Sc. in Computer Science, University of Tech (2016)</p>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <p>HTML, CSS, JavaScript, React, Node.js</p>
+    </section>
+
+</body>
+</html>
