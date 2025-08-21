@@ -1,4 +1,118 @@
-* {
-    background-size: auto;
-    background-color: #52D3D8
+body {
+  background: linear-gradient(270deg, #23272f 0%, #52D3D8 100%);
+  background-size: 200% 200%;
+  animation: gradientMove 10s ease-in-out infinite;
+  min-height: 100vh;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes gradientMove {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+nav.navbar {
+  box-shadow: 0 2px 16px rgba(82,211,216,0.10);
+  border-radius: 0 0 24px 24px;
+  background: #23272f !important;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  z-index: 1000;
+}
+
+.navbar-brand img {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(82,211,216,0.10);
+  background: #fff;
+  padding: 2px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  font-size: 1.08rem;
+  color: #fff !important;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  padding: 0.5rem 1.1rem !important;
+  margin: 0 0.2rem;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+}
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+  color: #52D3D8 !important;
+  background: rgba(82,211,216,0.08);
+  box-shadow: 0 2px 8px #52D3D8;
+}
+
+.dropdown-menu {
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(82,211,216,0.18);
+  background: #23272f;
+  border: none;
+  padding: 0.5rem 0;
+  min-width: 220px;
+  margin-top: 0.5rem !important;
+  animation: fadeInDropdown 0.25s cubic-bezier(.4,0,.2,1);
+}
+.dropdown-item {
+  font-size: 1.01rem;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 7px;
+  transition: background 0.18s, color 0.18s, transform 0.18s;
+  font-weight: 500;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  background: #52D3D8;
+  color: #23272f;
+  transform: scale(1.04);
+  box-shadow: 0 2px 8px #52D3D8;
+}
+@keyframes fadeInDropdown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Card effect for main content if any */
+.main-content, .container, .card {
+  background: rgba(35,39,47,0.85);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(82,211,216,0.10);
+  padding: 2rem;
+  margin-top: 2rem;
+  color: #fff;
+  border: 1.5px solid rgba(82,211,216,0.10);
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.main-content:hover, .container:hover, .card:hover {
+  box-shadow: 0 12px 48px rgba(82,211,216,0.18);
+  border: 2px solid #52D3D8;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 40px;
   }
+  .main-content, .container, .card {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .dropdown-item {
+    padding: 0.6rem 1rem;
+    font-size: 0.97rem;
+  }
+  .navbar-nav .nav-link {
+    padding: 0.5rem 0.7rem !important;
+    font-size: 1rem;
+  }
+}
+
+/* Hide double body tag background */
+body > head, body > body {
+  display: none;
+}
+
+/* Add a floating animated blob for extra style */
+

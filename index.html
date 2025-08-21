@@ -12,27 +12,28 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <body>
+  <div class="animated-blob"></div>
 <head></head>
   
   <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0 m-0">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm rounded-bottom-4 py-2 px-3" style="font-family: 'Inter', 'Segoe UI', Arial, sans-serif;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="/static_files/images/logos/dbkLogo.png" alt="DBK Logo" height="72"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img src="/static_files/images/logos/dbkLogo.png" alt="DBK Logo" height="56" class="rounded-3 shadow-sm" style="background:#fff;padding:2px;">
+      <span class="fw-bold fs-5" style="letter-spacing:1px;">BCACS</span>
+    </a>
+    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ms-auto ">
-        <li class="nav-item">
-          
-      
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto gap-lg-2 gap-1 align-items-lg-center">
+        <!-- Previous year questions dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Pervious year questions
+          <a class="nav-link dropdown-toggle px-3 rounded-3" href="#" id="pyqDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Previous Year Questions
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <ul class="dropdown-menu shadow rounded-4 border-0 mt-2" aria-labelledby="pyqDropdown">
             <li><a class="dropdown-item" href="https://drive.google.com/file/d/1pXvOXIHshe6HcOKbH0gEGP2EhrIbZBFp/view?usp=drive_link">evs pyq</a></li>
             <li><a class="dropdown-item" href="https://drive.google.com/file/d/1pQJIVsnT4ZpqJu24rYZy1aAcf1HVdMZu/view?usp=drive_link">english pyq</a></li>
             <li><a class="dropdown-item" href="https://drive.google.com/file/d/1pRpiknWNGijTdff8DhucFflDQU8_dQ1X/view?usp=drive_link">maths pyq</a></li>
@@ -40,24 +41,48 @@
             <li><a class="dropdown-item" href="https://drive.google.com/file/d/1pSZSVaaq3ogdSIYlcaAO8p-I-w7oHmwZ/view?usp=drive_link">Csa sem1 pyq</a></li>
             <li><a class="dropdown-item" href="https://drive.google.com/file/d/13lsybqttPI9Qc8bPfwxQClapgxCjjl-9/view?usp=drive_link">pyq</a></li>
             <li><a class="dropdown-item" href="https://drive.google.com/file/d/1MU-YvvIAchWuG9hRWM_pFbYPJGw2PV75/view?usp=drive_link">end sem pyq</a></li>
-           <li><a class="dropdown-item" href=" https://drive.google.com/file/d/18oFnPb56dxFbmDN0yWis-nk7kD0jxjwF/view?usp=drive_link">end sem pyq</a></li>
+            <li><a class="dropdown-item" href=" https://drive.google.com/file/d/18oFnPb56dxFbmDN0yWis-nk7kD0jxjwF/view?usp=drive_link">end sem pyq</a></li>
           </ul>
-    
-          <li class="nav-item dropdown">
-            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              class notes
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="https://drive.google.com/file/d/1pMQvIx56DucS_I2l7g_-uzgiUaDpAA4j/view?usp=drive_link">programing with c notes</a></li>
-              <li><a class="dropdown-item" href="https://drive.google.com/file/d/1W1vKRFmloJ4fH5fppN8CiAG5zHpvV5pR/view?usp=drive_link">csa notes</a></li>
-              <li><a class="dropdown-item" href="https://drive.google.com/file/d/1CJVxwIxI0ED6_lY8vsceBC4yH6zSFQe9/view?usp=drive_link">maths  notes part 1</a></li>
-              
-              <li><a class="dropdown-item" href="https://drive.google.com/file/d/1OZolmFvjvXTWJwZvU3tQEMuMcvBWKjjU/view?usp=drive_link">maths notes part 2</a></li>
-            </ul>
-           
-              <li class="nav-item dropdown">
-                <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Others
+        </li>
+        <!-- Class notes dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle px-3 rounded-3" href="#" id="notesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Class Notes
+          </a>
+          <ul class="dropdown-menu shadow rounded-4 border-0 mt-2" aria-labelledby="notesDropdown">
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/1pMQvIx56DucS_I2l7g_-uzgiUaDpAA4j/view?usp=drive_link">programing with c notes</a></li>
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/1W1vKRFmloJ4fH5fppN8CiAG5zHpvV5pR/view?usp=drive_link">csa notes</a></li>
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/1CJVxwIxI0ED6_lY8vsceBC4yH6zSFQe9/view?usp=drive_link">maths  notes part 1</a></li>
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/1OZolmFvjvXTWJwZvU3tQEMuMcvBWKjjU/view?usp=drive_link">maths notes part 2</a></li>
+          </ul>
+        </li>
+        <!-- Others dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle px-3 rounded-3" href="#" id="othersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Others
+          </a>
+          <ul class="dropdown-menu shadow rounded-4 border-0 mt-2" aria-labelledby="othersDropdown">
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/15L4rLIgALMNCCA2gUifg1c371HGxm9nT/view?usp=drive_link">question bank</a></li>
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/18qywqLupNA_AI5p-Ook3jAhYVQxRgjlp/view?usp=drive_link">jrsu bcacs syllabus</a></li>
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/1Ac_hvrWp1i645UIrqg5_m4N_uLMTCpQs/view?usp=drive_link">logic gate short notes</a></li>
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/1quqEw8CpQU7p2cDro9qYRBr06SH1_VOR/view?usp=drive_link">csa refrence book</a></li>
+          </ul>
+        </li>
+        <!-- Playlist dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle px-3 rounded-3" href="#" id="playlistDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Playlist of YouTube Lectures
+          </a>
+          <ul class="dropdown-menu shadow rounded-4 border-0 mt-2" aria-labelledby="playlistDropdown">
+            <li><a class="dropdown-item" href="https://youtu.be/irqbmMNs2Bo?si=IX0z4mAiDjN7HPdT">c programing one shot</a></li>
+            <li><a class="dropdown-item" href="https://youtu.be/pHNbm-4reIc?si=rLz0jwjSGSv0rN-y">csa Playlist</a></li>
+            <li><a class="dropdown-item" href="https://www.youtube.com/playlist?list=PL7p9egkWOjuIdO4bPtQQYQXFQfZvVGJDt">maths sem 1 playlist</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="https://drive.google.com/file/d/15L4rLIgALMNCCA2gUifg1c371HGxm9nT/view?usp=drive_link">question bank</a></li>
